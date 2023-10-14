@@ -221,7 +221,7 @@ main {
 #home {
     height: 100vh;
     width: 100%;
-    background-image: url("image.gif");
+    background-image: url("bgimagee.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
