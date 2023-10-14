@@ -13,12 +13,32 @@
 
 /* Global variables */
 :root {
-    --sideBGColor: #000000;
+    --sideBGColor: rgb(4, 4, 4);
     --themeColor: cyan;
     --iconBGColor: #ffffff;
     --textColor: #c9c9c9;
     --textMainColor: #ffffff;
     --bgColor: #000000;
+}
+
+
+/* HIDDING THE SCROLLBARS */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 /* HEADER START */
@@ -35,6 +55,7 @@ header {
     bottom: 0;
     transition: 0.4s;
     z-index: 99;
+    border-right: 1px solid rgba(124, 124, 124, 0.521);
 
 }
 
@@ -120,6 +141,8 @@ header .footer {
     padding: 15px;
     position: fixed;
     bottom: 0;
+    border-right: 1px solid rgba(124, 124, 124, 0.521);
+
     left: 0;
     transition: 0.4s;
 }
@@ -288,7 +311,8 @@ main {
 
 /* About section start */
 #about {
-    padding: 70px 30px;
+    padding: 50px 30px;
+    padding-bottom: 10px;
 }
 
 /* Global Heading  */
@@ -806,7 +830,7 @@ main {
 }
 
 #contact .contact-row {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     gap: 20px;
     width: 100%;
@@ -872,7 +896,7 @@ main {
     width: 100%;
     font-size: 18px;
     /* background-color: var(--bgColor); */
-    margin: 30px 0;
+    margin: 18px 0;
     font-weight: 500;
     color: var(--textMainColor);
     padding: 10px 20px;
