@@ -56,15 +56,15 @@ async function handleSubmit(event) {
               .map((error) => error["message"])
               .join(", ");
           } else {
-            // status.innerHTML = "Oops! There was a problem submitting your form";
-            status.innerHTML = "Oops! Server down..try again later";
+            status.innerHTML = "Oops! There was a problem submitting your form";
+            // status.innerHTML = "Oops! Server down..try again later";
           }
         });
       }
     })
     .catch((error) => {
-      //   status.innerHTML = "Oops! There was a problem submitting your form";
-      status.innerHTML = "Oops! Server down..try again later";
+        status.innerHTML = "Oops! There was a problem submitting your form";
+      // status.innerHTML = "Oops! Server down..try again later";
     });
 }
 
