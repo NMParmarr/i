@@ -57,6 +57,7 @@ async function handleSubmit(event) {
               .join(", ");
           } else {
             status.innerHTML = "Oops! There was a problem submitting your form";
+            
             // status.innerHTML = "Oops! Server down..try again later";
           }
         });
