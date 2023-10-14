@@ -4,7 +4,7 @@ let isopen = false;
 
 MenuBtn.addEventListener("click", function (e) {
   document.querySelector("body").classList.toggle("mobile-nav-active");
-  document.querySelector("main").classList.toggle("blur-bg");
+  document.querySelector("body").classList.toggle("menuopen");
   this.classList.toggle("fa-xmark");
   isopen = !isopen;
 });
@@ -12,7 +12,7 @@ MenuBtn.addEventListener("click", function (e) {
 function pop(e) {
   if (isopen == e) {
     document.querySelector("body").classList.remove("mobile-nav-active");
-    document.querySelector("main").classList.remove("blur-bg");
+    document.querySelector("body").classList.remove("menuopen");
     MenuBtn.classList.remove("fa-xmark");
     isopen = false;
   }
@@ -57,14 +57,14 @@ async function handleSubmit(event) {
               .join(", ");
           } else {
             status.innerHTML = "Oops! There was a problem submitting your form";
-            
+
             // status.innerHTML = "Oops! Server down..try again later";
           }
         });
       }
     })
     .catch((error) => {
-        status.innerHTML = "Oops! There was a problem submitting your form";
+      status.innerHTML = "Oops! There was a problem submitting your form";
       // status.innerHTML = "Oops! Server down..try again later";
     });
 }

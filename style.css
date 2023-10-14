@@ -41,6 +41,7 @@ header {
     scrollbar-width: none;
 }
 
+
 /* HEADER START */
 header {
     height: 100vh;
@@ -1057,5 +1058,9 @@ main {
 
 
 .blur-bg {
-    background-color: #3b3a3a8c;
+    background-color: #3f3f3f8c;
+}
+
+.menuopen {
+    overflow: hidden;
 }
