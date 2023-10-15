@@ -18,7 +18,9 @@
     --iconBGColor: #ffffff;
     --textColor: #c9c9c9;
     --textMainColor: #ffffff;
-    --bgColor: #000000;
+    --bgColor: #111111;
+    --bg2Color: #141414;
+    --bgContactColor: rgb(14, 14, 14);
 }
 
 
@@ -403,7 +405,7 @@ main {
 
 #about p {
     color: var(--textColor);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Mobile View */
@@ -412,8 +414,8 @@ main {
         padding: 30px 20px 10px 20px;
     }
 
-    .sub-para {
-        font-size: 14px;
+    #about p {
+        font-size: 16px;
         letter-spacing: 0px;
         text-align: justify;
     }
@@ -456,9 +458,7 @@ main {
         font-size: 18px;
     }
 
-    #about p {
-        font-size: 10px;
-    }
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -466,6 +466,19 @@ main {
         width: 90%;
     }
 
+    #about .about-col .info-col .icon-list-col .icon-list ul li strong {
+        font-size: 16px;
+    }
+
+    #about .about-col .info-col .icon-list-col .icon-list ul li span {
+        font-size: 14px;
+    }
+
+    #about p {
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
 }
 
 /* About section end */
@@ -474,6 +487,7 @@ main {
 
 #skill {
     padding: 70px 30px;
+    background: var(--bg2Color);
 }
 
 #skill .skill-row {
@@ -502,7 +516,6 @@ main {
     height: 10px;
     background-color: rgb(48, 48, 48);
     border-radius: 15px;
-
 }
 
 #skill .skill-row .skill-box .skill-outter-line .skill-inner-line {
@@ -512,11 +525,20 @@ main {
 }
 
 #skill .sub-para {
-    font-size: 23px;
+    font-size: 18px;
 
 }
 
 /* Mobile View */
+
+
+@media only screen and (max-width: 800px) {
+
+    #skill .sub-para {
+        font-size: 16px;
+
+    }
+}
 
 @media only screen and (max-width: 490px) {
 
@@ -529,7 +551,7 @@ main {
     }
 
     #skill .sub-para {
-        font-size: 16px;
+        font-size: 14px;
 
     }
 }
@@ -537,10 +559,9 @@ main {
 /* Skills Section End */
 
 
-/* Resuem Section Start */
+/* Resume Section Start */
 #resume {
     padding: 70px 30px;
-    background-color: black;
 }
 
 #resume .resume-row {
@@ -833,6 +854,7 @@ main {
 
 #contact {
     padding: 70px 30px;
+    background: var(--bg2Color);
 }
 
 #contact .contact-row {
@@ -845,9 +867,9 @@ main {
 #contact .contact-row .contact-left {
     flex-basis: 40%;
     min-width: 40%;
-    background-color: var(--bgColor);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
+    background-color: black;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     padding: 30px
 }
 
@@ -890,9 +912,9 @@ main {
 #contact .contact-row .contact-right {
     flex-basis: 60%;
     min-width: 60%;
-    background-color: var(--bgColor);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
-    border-radius: 4px;
+    background-color: black;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
     padding: 30px
 }
 
